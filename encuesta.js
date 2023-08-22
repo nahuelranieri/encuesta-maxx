@@ -244,37 +244,46 @@ function next(choice) {
             <a href="${randomProduct}" target="_blank">Producto aleatorio 1</a>
           `;
     } else if (choice === 'ano') {
+      const productPrepararme = [
+        'https://www.maxx.com.ar/productos/vibrador-telescopico/',
+      ];
+      const productEstimulacion = [
+        'https://www.maxx.com.ar/productos/maxx-play-plug-baxx/',
+      ];
+      const randomProduct = productPrepararme[Math.floor(Math.random() * productPrepararme.length)];
+      const randomProduct1 = productEstimulacion[Math.floor(Math.random() * productEstimulacion.length)];
       surveyContainer.innerHTML = `
       <h1>Encuesta</h1>
       <p>Seleccionaste: Ano</p>
       <div id="btns">
-      <button onclick="next('prepararme')">
+      <button onclick="window.location.href='${randomProduct}'">
         <img src="icons/anal-2.png">
         <p>Quiero prepararme para experimentar relaciones anales</p>
       </button>
-      <button onclick="next('estimulacion')">
+      <button onclick="window.location.href='${randomProduct1}'">
         <img src="icons/placer-anal.png">
         <p>Quiero disfrutar de la estimulacion anal</p>
       </button>
       </div>
   `;
-    } else if (choice === 'prepararme') {
-      const products = [
-        'https://www.maxx.com.ar/productos/vibrador-telescopico/',
-      ];
-      const randomProduct = products[Math.floor(Math.random() * products.length)];
-      surveyContainer.innerHTML += `
-            <p>Productos relacionados:</p>
-            <a href="${randomProduct}" target="_blank">Producto aleatorio 1</a>
-          `;
-    } else if (choice === 'estimulacion') {
-      const products = [
-        'https://www.maxx.com.ar/productos/maxx-play-plug-baxx/',
-      ];
-      const randomProduct = products[Math.floor(Math.random() * products.length)];
-      surveyContainer.innerHTML += `
-            <p>Productos relacionados:</p>
-            <a href="${randomProduct}" target="_blank">Producto aleatorio 1</a>
-          `;
-    }
+    } 
+    // else if (choice === 'prepararme') {
+    //   const products = [
+    //     'https://www.maxx.com.ar/productos/vibrador-telescopico/',
+    //   ];
+    //   const randomProduct = products[Math.floor(Math.random() * products.length)];
+    //   surveyContainer.innerHTML += `
+    //         <p>Productos relacionados:</p>
+    //         <a href="${randomProduct}" target="_blank">Producto aleatorio 1</a>
+    //       `;
+    // } else if (choice === 'estimulacion') {
+    //   const products = [
+    //     'https://www.maxx.com.ar/productos/maxx-play-plug-baxx/',
+    //   ];
+    //   const randomProduct = products[Math.floor(Math.random() * products.length)];
+    //   surveyContainer.innerHTML += `
+    //         <p>Productos relacionados:</p>
+    //         <a href="${randomProduct}" target="_blank">Producto aleatorio 1</a>
+    //       `;
+    // }
   }
