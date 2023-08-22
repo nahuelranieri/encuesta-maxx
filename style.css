@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('./fonts/akrobat/Akrobat-Thin.ttf') format('ttf'),
+         url('./fonts/akrobat/Akrobat-SemiBold.ttf') format('ttf');
+    /* Agrega formatos adicionales si tienes */
+    font-weight: normal; /* Puedes especificar el peso de la fuente */
+    font-style: normal; /* Puedes especificar el estilo de la fuente */
+  }
+
+:root {
+    --amarillo: #dcfd5e;
+    --rosa: #e979dd;
+    --azul: #4270f6;
+    --rojo: #eb3c43;
+}
+  
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Akrobat', sans-serif;
+}
+
+#survey-container {
+    text-align: center;
+}
+
+#container-btns-encuesta > button {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid var(--rojo);
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    animation: none; /* Elimina la animación inicial */
+    border-radius: 15px;
+}
+
+button > p{
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background-color: var(--rojo);
+    
+}
+  
+
+button > img {
+    width: 100px;
+}
+
+button > .x2 {
+    width: 200px !important;
+}
+
+
+#btns {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

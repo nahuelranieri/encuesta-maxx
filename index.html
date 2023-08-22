@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="encuesta.js"></script>
+</head>
+
+<body>
+    <div id="survey-container">
+        <h1>Encuesta</h1>
+        <p>¿Estas...</p>
+        <div id="container-btns-encuesta">
+            <button onclick="next('pareja')">
+                <img src="icons/en pareja.png">
+                <p>En pareja</p>
+            </button>
+            <button onclick="next('solas')">
+                <img src="icons/a solas.png">
+                <p>A solas</p>
+            </button>
+        </div>
+        <div id="container-btns">
+            <button onclick="previous()">Retroceder</button>
+            <button onclick="next('pareja')">Avanzar</button>
+        </div>
+        
+    </div>
+</body>
+
+</html>
