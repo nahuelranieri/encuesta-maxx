@@ -24,8 +24,8 @@ function next(choice) {
             <img src="icons/pene-pene.png" class="x2">
             <p>Pene Pene</p>
           </button>
-          <button onclick="location.reload();"><p>ATRAS</p></button>
           </div>
+          <button onclick="location.reload();"><p><i class="arrow"></i>ATRÁS</p></button>
         `;
   } else if (choice === 'solas') {
     // Lógica para la opción "A solas"
@@ -50,8 +50,11 @@ function next(choice) {
             <img src="icons/anal-2.png">
             <p>Ano</p>
           </button>
-          <button onclick="location.reload();"><p>ATRAS</p></button>
           </div>
+          <button onclick="location.reload();" class="back-btn">
+          <i class="arrow"></i>
+          <p>ATRÁS</p>
+          </button>
         `;
   } else if (choice === 'vulva_pene') {
     // Lógica para el camino "Vulva Pene"
@@ -95,8 +98,11 @@ function next(choice) {
           <img src="icons/placer-anal.png">
           <p>Quiero placer anal</p>
         </button>
-        <button onclick="next('pareja')"><p>ATRAS</p></button>
         </div>
+        <button onclick="next('pareja')" class="back-btn">
+        <i class="arrow"></i>
+        <p>ATRÁS</p>
+        </button>
       `;
   } else if (choice === 'vulva_vulva') {
     // Lógica para el camino "Vulva Pene"
@@ -133,8 +139,11 @@ function next(choice) {
             <img src="icons/versatil.png">
             <p>Quiero un juguete versátil</p>
           </button>
-          <button onclick="next('pareja')"><p>ATRAS</p></button>
           </div>
+          <button onclick="next('pareja')" class="back-btn">
+          <i class="arrow"></i>
+          <p>ATRÁS</p>
+          </button>
   `;
   }
   else if (choice === 'vulva') {
@@ -184,8 +193,11 @@ function next(choice) {
         <img src="icons/recomendar.png">
         <p>No tengo algo definido, recomendame algo</p>
       </button>
-      <button onclick="next('solas')"><p>ATRAS</p></button>
       </div>
+      <button onclick="next('solas')" class="back-btn">
+      <i class="arrow"></i>
+      <p>ATRÁS</p>
+      </button>
   `;
   }
   else if (choice === 'ano') {
@@ -210,8 +222,11 @@ function next(choice) {
         <img src="icons/placer-anal.png">
         <p>Quiero disfrutar de la estimulacion anal</p>
       </button>
-      <button onclick="next('solas')"><p>ATRAS</p></button>
       </div>
+      <button onclick="next('solas')" class="back-btn">
+      <i class="arrow"></i>
+      <p>ATRÁS</p>
+      </button>
   `;
   }
 }

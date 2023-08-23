@@ -5,7 +5,7 @@
     /* Agrega formatos adicionales si tienes */
     font-weight: normal; /* Puedes especificar el peso de la fuente */
     font-style: normal; /* Puedes especificar el estilo de la fuente */
-  }
+}
 
 :root {
     --amarillo: #dcfd5e;
@@ -26,9 +26,12 @@ body {
 
 #survey-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-button {
+#btns > button {
     width: 250px;
     height: 250px;
     background-color: white;
@@ -41,22 +44,22 @@ button {
     border-radius: 15px;
 }
 
-button > p{
+#btns > button > p{
     color: black;
 }
 
-button:hover {
+#btns > button:hover {
     transform: translateY(-5px);
     background-color: var(--rojo);
     
 }
   
 
-button > img {
+#btns > button > img {
     width: 100px;
 }
 
-button > .x2 {
+#btns > button > .x2 {
     width: 200px !important;
 }
 
@@ -65,4 +68,32 @@ button > .x2 {
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+/* Boton de Retroceder/Atrás */
+.back-btn {
+    border: none;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+}
+.back-btn:hover{
+    opacity: 60%;
+}
+
+.back-btn > p {
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px; 
+}
+
+.back-btn > .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
