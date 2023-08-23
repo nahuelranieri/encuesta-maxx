@@ -25,7 +25,10 @@ function next(choice) {
             <p>Pene Pene</p>
           </button>
           </div>
-          <button onclick="location.reload();"><p><i class="arrow"></i>ATRÁS</p></button>
+          <button onclick="location.reload();" class="back-btn">
+          <i class="arrow"></i>
+          <p>ATRÁS</p>
+          </button>
         `;
   } else if (choice === 'solas') {
     // Lógica para la opción "A solas"
