@@ -2,9 +2,8 @@
     font-family: 'Akrobat';
     src: url('./fonts/akrobat/Akrobat-Thin.ttf') format('ttf'),
          url('./fonts/akrobat/Akrobat-SemiBold.ttf') format('ttf');
-    /* Agrega formatos adicionales si tienes */
-    font-weight: normal; /* Puedes especificar el peso de la fuente */
-    font-style: normal; /* Puedes especificar el estilo de la fuente */
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 :root {
@@ -40,7 +39,7 @@ body {
     margin: 10px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
-    animation: none; /* Elimina la animación inicial */
+    animation: none; 
     border-radius: 15px;
 }
 
@@ -51,10 +50,8 @@ body {
 #btns > button:hover {
     transform: translateY(-5px);
     background-color: var(--rojo);
-    
 }
   
-
 #btns > button > img {
     width: 100px;
 }
@@ -69,6 +66,7 @@ body {
     justify-content: center;
     margin: 10px;
 }
+
 /* Boton de Retroceder/Atrás */
 .back-btn {
     border: none;
