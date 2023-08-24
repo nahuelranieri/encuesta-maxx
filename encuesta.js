@@ -245,6 +245,7 @@ const productData = {
         icon: 'icons/pene-vulva.png',
         text: 'Vulva Pene',
         next: 'vulva_pene',
+        class: 'x2',
 
       },
       {
@@ -252,6 +253,7 @@ const productData = {
         icon: 'icons/vulva-vulva.png',
         text: 'Vulva Vulva',
         next: 'vulva_vulva',
+        class: 'x2',
       },
       {
         url: random([
@@ -261,6 +263,7 @@ const productData = {
         icon: 'icons/pene-pene.png',
         text: 'Pene Pene',
         next: '',
+        class: 'x2',
       }
     ]
   },
@@ -290,7 +293,7 @@ const productData = {
         ]),
         icon: 'icons/anal-2.png',
         text: 'Ano',
-        next: '',
+        next: 'ano',
       }
     ]
   },
@@ -427,6 +430,28 @@ const productData = {
       }
     ]
   },
+  ano: {
+    title: 'Ano',
+    back: "next('solas')",
+    options: [
+      {
+        url: random([
+          'https://www.maxx.com.ar/productos/vibrador-telescopico/'
+        ]),
+        icon: 'icons/anal-2.png',
+        text: 'Quiero prepararme para experimentar relaciones anales',
+        next: '',
+      },
+      {
+        url: random([
+          'https://www.maxx.com.ar/productos/maxx-play-plug-baxx/'
+        ]),
+        icon: 'icons/placer-anal.png',
+        text: 'Quiero disfrutar de la estimulacion anal',
+        next: '',
+      },
+    ]
+  },
   
   // Otros datos de productos
 };
@@ -437,14 +462,14 @@ function generateButtons(choices) {
     if (choice.next == '') {
       return `
       <button onclick="window.location.href='${choice.url}'">
-        <img src="${choice.icon}" class="x2">
+        <img src="${choice.icon}" class="${choice.class}">
         <p>${choice.text}</p>
       </button>
     `;
     } else {
       return `
       <button  onclick="next('${choice.next}')">
-        <img src="${choice.icon}" class="x2">
+        <img src="${choice.icon}" class="${choice.class}">
         <p>${choice.text}</p>
       </button>
     `;
