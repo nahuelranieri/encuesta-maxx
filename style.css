@@ -13,7 +13,6 @@
     --rojo: #eb3c43;
 }
   
-
 body {
     display: flex;
     justify-content: center;
@@ -94,4 +93,14 @@ body {
     padding: 3px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+/*Query Mobile*/
+@media (max-width: 544px) {
+    #btns{
+        flex-direction: column-reverse;
+    }
+}
+/*Query Tablet*/
+@media (max-width: 921px) and (min-width: 545px){
+
 }
